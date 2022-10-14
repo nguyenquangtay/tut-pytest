@@ -28,10 +28,10 @@ class TestFixture:
         return Calculator(3, 5)
 
     # test
-
+    @pytest.mark.smoke
     def test_add(self, cal):
         assert cal.add() == 8
 
+    @pytest.mark.smoke
     def test_divide(self, cal):
         assert cal.divide() == 0.6
-
